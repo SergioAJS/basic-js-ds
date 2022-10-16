@@ -126,7 +126,7 @@ class BinarySearchTree {
         }
         node.data = minFromRight.data;
 
-        node.right - removeNode(node.right, minFromRight.data);
+        node.right = removeNode(node.right, minFromRight.data);
 
         return node;
     }
